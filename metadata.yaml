@@ -1,8 +1,8 @@
 # Copyright 2023 Canonical Ltd.
 # See LICENSE file for licensing details.
 
-name: munge-operator
-display-name: MUNGE Operator
+name: munge
+display-name: munge
 summary: An authentication service built for HPC clusters.
 description: |
   MUNGE (MUNGE Uid 'N' Gid Emporium) is an authentication service for creating
