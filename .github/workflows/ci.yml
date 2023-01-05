@@ -1,6 +1,3 @@
-# Copyright 2023 Canonical Ltd.
-# See LICENSE file for licensing details.
-
 name: MUNGE charm tests
 on:
   workflow_call:
