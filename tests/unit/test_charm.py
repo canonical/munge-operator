@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # Copyright 2023 Canonical Ltd.
 # See LICENSE file for licensing details.
 
@@ -12,8 +13,6 @@ from charm import MungeOperatorCharm
 
 class TestCharm(unittest.TestCase):
     def setUp(self):
-        # Enable more accurate simulation of container networking.
-        # For more information, see https://juju.is/docs/sdk/testing#heading--simulate-can-connect
         ops.testing.SIMULATE_CAN_CONNECT = True
         self.addCleanup(setattr, ops.testing, "SIMULATE_CAN_CONNECT", False)
 
