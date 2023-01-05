@@ -5,10 +5,9 @@
 import unittest
 
 import ops.testing
+from charm import MungeOperatorCharm
 from ops.model import ActiveStatus
 from ops.testing import Harness
-
-from charm import MungeOperatorCharm
 
 
 class TestCharm(unittest.TestCase):
