@@ -1,0 +1,28 @@
+# Copyright 2023 Canonical Ltd.
+# See LICENSE file for licensing details.
+
+name: munge
+display-name: munge
+summary: An authentication service built for HPC clusters.
+description: |
+  MUNGE (MUNGE Uid 'N' Gid Emporium) is an authentication service for creating
+  and validating credentials. It is designed to be highly scalable for use in
+  an HPC cluster environment. It allows a process to authenticate the UID and
+  GID of another local or remote process within a group of hosts having common
+  users and groups. These hosts form a security realm that is defined by a
+  shared cryptographic key. Clients within this security realm can create and
+  validate credentials without the use of root privileges, reserved ports, or
+  platform-specific methods.
+maintainers:
+  - Jason C. Nucciarone <jason.nucciarone@canonical.com>
+
+subordinate: true
+
+provides:
+  auth-munge:
+    interface: auth-munge
+
+requires:
+  munge-ready:
+    interface: subordinate-ready
+    scope: container
